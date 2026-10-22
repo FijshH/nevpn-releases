@@ -6,7 +6,7 @@
 </a>
 
 <p align="center">
-  <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><img alt="Последняя версия" src="https://img.shields.io/github/v/release/FijshH/nevpn-releases?label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=15803d&style=flat-square"></a>
+  <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><img alt="Последняя версия" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FFijshH%2Fnevpn-releases%2Freleases%2Flatest%2Fdownload%2Fupdate.json&query=%24.android.versionName&label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=15803d&style=flat-square"></a>
   <a href="https://github.com/FijshH/nevpn-releases/releases"><img alt="Скачивания" src="https://img.shields.io/github/downloads/FijshH/nevpn-releases/total?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&color=000&style=flat-square"></a>
   <img alt="Android 8.0+" src="https://img.shields.io/badge/Android-8.0%2B-000?style=flat-square&logo=android&logoColor=white">
   <a href="https://nevpn.app"><img alt="nevpn.app" src="https://img.shields.io/badge/nevpn.app-000?style=flat-square"></a>
@@ -62,9 +62,16 @@ Root не нужен. Нужен Android 8.0 или новее.
 
 ### Проверка файла
 
-Все версии подписаны одним ключом, поэтому Android не поставит поверх приложения APK с другой подписью. Контрольные суммы SHA-256 каждого файла лежат в `update.json` релиза и на [nevpn.app](https://nevpn.app):
+Все версии подписаны одним ключом, поэтому Android не поставит поверх приложения APK с другой подписью. SHA-256 сертификата подписи:
+
+```text
+1a8a04777f3301cf7ad24274c55640528e36d347d744f9fa82c47416802d35ca
+```
+
+Проверить подпись и сам файл (суммы SHA-256 каждого APK лежат в `update.json` релиза и на [nevpn.app](https://nevpn.app)):
 
 ```bash
+apksigner verify --print-certs nevpn-*.apk
 shasum -a 256 nevpn-*.apk
 ```
 
