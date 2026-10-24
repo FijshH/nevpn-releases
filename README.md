@@ -5,6 +5,10 @@
   </picture>
 </a>
 
+<h1 align="center">NE.VPN — VPN-клиент для Android</h1>
+
+<p align="center">Бесплатный VPN для Android, который подключается при белых списках · Free Android VPN client</p>
+
 <p align="center">
   <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><img alt="Последняя версия" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FFijshH%2Fnevpn-releases%2Freleases%2Flatest%2Fdownload%2Fupdate.json&query=%24.android.versionName&label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=15803d&style=flat-square"></a>
   <a href="https://github.com/FijshH/nevpn-releases/releases"><img alt="Скачивания" src="https://img.shields.io/github/downloads/FijshH/nevpn-releases/total?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&color=000&style=flat-square"></a>
@@ -20,7 +24,7 @@
   <a href="#english">English</a>
 </p>
 
-**NE.VPN** — бесплатный VPN-клиент для Android. Одна кнопка, подписки любых провайдеров и поддержка OpenFlux, который подключается, когда мобильный интернет на белых списках и обычный VPN не работает. Здесь лежат все версии приложения; новые приложение находит и ставит само.
+**NE.VPN** — бесплатный VPN-клиент для Android. Одна кнопка, подписки любых провайдеров и поддержка OpenFlux, который подключается, когда мобильный интернет на белых списках и обычный VPN не работает. Здесь лежат все версии приложения: [скачайте APK последней версии](https://github.com/FijshH/nevpn-releases/releases/latest), а новые приложение найдёт и поставит само.
 
 <p align="center">
   <img src="assets/screens.png" alt="Экраны NE.VPN: подключено, светлая тема, несколько подписок, настройки" width="100%">
@@ -35,12 +39,22 @@
 - **Россия мимо VPN.** Банки, Госуслуги, Яндекс, VK и маркетплейсы работают напрямую и не видят адрес сервера. Список приложений можно поменять.
 - **Пинг до каждого сервера** ещё до подключения: ICMP или время TCP-соединения.
 - **Обновляется само.** О новой версии приходит уведомление; если сервер обновлений закрыт, приложение скачает её через VPN.
+- **Продление в приложении.** «Продлить» открывает страницу оплаты провайдера, «Кабинет» — его личный кабинет. Приложение напомнит, когда подписка подходит к концу.
 - **Плитка в шторке, постоянная VPN и автоподключение.**
 - **Планшеты и раскладные телефоны:** кнопка слева, подписки справа, по несколько в ряд.
 
 <p align="center">
   <img src="assets/tablet.png" alt="NE.VPN на планшете: кнопка подключения слева, две подписки справа" width="100%">
 </p>
+
+## Подписки из других приложений и свой сервер
+
+NE.VPN читает те же форматы, что и другие клиенты, поэтому подписку менять не нужно:
+
+- **Happ, v2rayNG, Hiddify, NekoBox, Streisand:** скопируйте ссылку-подписку или ссылки `vless://`, `vmess://`, `trojan://`, `ss://`, `hysteria2://` и вставьте через **+**. Зашифрованные ссылки `happ://crypt…` открывает только Happ — попросите у провайдера обычную ссылку.
+- **AmneziaVPN и AmneziaWG:** ключ `vpn://`, ссылка `awg://` или файл `.conf`, AmneziaWG до версии 3.1.
+- **WireGuard:** файл `.conf` или ссылка `wireguard://`.
+- **Свой сервер на 3x-ui, Marzban или Remnawave:** ссылка-подписка панели (обычный текст, base64, конфиг sing-box или Xray). Срок подписки приложение показывает, если панель его сообщает.
 
 ## Установка
 
@@ -90,9 +104,27 @@ shasum -a 256 nevpn-*.apk
 </details>
 
 <details>
+<summary><b>Что такое белые списки и как VPN работает при них?</b></summary>
+<br>
+Белые списки — режим, в котором мобильный оператор пропускает только заранее разрешённые сайты. Обычные VPN в нём не подключаются. Работают профили OpenFlux: если ваш провайдер их даёт, включите такой, когда мобильный интернет перестал открывать что-либо, кроме российских сайтов. Канал сам перейдёт на запасной путь, если прямой закрыт.
+</details>
+
+<details>
 <summary><b>Какие подписки подходят?</b></summary>
 <br>
 Ссылка-подписка (обычный текст, base64, конфиг sing-box или Xray) или ссылки <code>vless://</code>, <code>vmess://</code>, <code>trojan://</code>, <code>ss://</code>, <code>hysteria2://</code>, <code>tuic://</code>, <code>anytls://</code>, <code>awg://</code>, <code>wireguard://</code>, <code>openflux://</code>, ключ <code>vpn://</code> или файл <code>.conf</code>. Строки, которые приложение не понимает, оно пропускает.
+</details>
+
+<details>
+<summary><b>Чем VPN-клиент отличается от VPN-сервиса?</b></summary>
+<br>
+Клиент — приложение, которое подключается к серверам. Серверы и подписку даёт провайдер или ваш собственный сервер. NE.VPN — клиент: он бесплатный и работает с подпиской любого провайдера.
+</details>
+
+<details>
+<summary><b>Какой телефон нужен?</b></summary>
+<br>
+Android 8.0 и новее, телефон, планшет или раскладной. Root не нужен. Если не знаете, какой APK выбрать, берите <code>arm64-v8a</code>: он для почти всех телефонов.
 </details>
 
 <details>
@@ -120,8 +152,25 @@ shasum -a 256 nevpn-*.apk
 - **Protocols:** VLESS (Reality, XHTTP, WS, gRPC), VMess, Trojan, Shadowsocks, Hysteria2, TUIC, AnyTLS, AmneziaWG up to 3.1, WireGuard, OpenFlux.
 - **Two engines:** sing-box by default, Xray-core with a switch in the settings.
 - **Russian apps and sites stay outside the VPN**, so banks and Gosuslugi keep working.
+- **Renew from the app:** the renew button opens your provider's payment page, the account button its account page; a reminder comes before the subscription runs out.
 - Ping to every server, self-update, quick settings tile, always-on VPN, tablets and foldables.
 
-**Install:** download the `arm64-v8a` APK from the [latest release](https://github.com/FijshH/nevpn-releases/releases/latest), open it, allow installs from your browser once, tap **+** in the app and paste your subscription. Android 8.0 or later, no root.
+### Install
 
-<p align="center"><sub>Android VPN client · VLESS Reality · Hysteria2 · AmneziaWG · WireGuard · OpenFlux · обход белых списков · <a href="https://nevpn.app">nevpn.app</a></sub></p>
+Download the `arm64-v8a` APK from the [latest release](https://github.com/FijshH/nevpn-releases/releases/latest) (`armeabi-v7a` for old 32-bit phones, `x86_64` for emulators, or the universal one), open it, allow installs from your browser once, tap **+** in the app and paste your subscription. Android 8.0 or later, no root.
+
+### Coming from another app
+
+Subscriptions and links from Happ, v2rayNG, Hiddify, NekoBox and Streisand work as they are, and so do AmneziaVPN `vpn://` keys, WireGuard and AmneziaWG `.conf` files and subscription links from 3x-ui, Marzban and Remnawave panels. Happ's encrypted `happ://crypt…` links open in Happ only: ask your provider for the plain link.
+
+### FAQ
+
+**Is it free?** Yes. It is a client: it connects to the servers of your subscription, from a provider or your own server.
+
+**What is a whitelist lockdown?** A mode in which a mobile carrier lets through approved sites only. Ordinary VPNs do not connect in it; OpenFlux profiles do, and fall back to another path by themselves when the direct one is closed.
+
+**Why not Google Play?** The app ships as a signed APK from this repository and updates itself, so new versions reach everyone at once. Android will not install an APK with another signature over it.
+
+**Found a bug?** [Open an issue](https://github.com/FijshH/nevpn-releases/issues/new) with the phone model, Android version and app version.
+
+<p align="center"><sub>VPN для Android · VPN-клиент · обход белых списков · VLESS Reality · XHTTP · VMess · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS · AmneziaWG · WireGuard · OpenFlux · sing-box · Xray-core · Android VPN client · APK · <a href="https://nevpn.app">nevpn.app</a></sub></p>
