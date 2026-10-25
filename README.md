@@ -1,30 +1,34 @@
 <a href="https://nevpn.app">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
-    <img src="assets/banner-light.png" alt="NE.VPN — VPN-клиент для Android, который подключается при белых списках" width="100%">
+    <img src="assets/banner-light.png" alt="NE.VPN — VPN-клиент для Android и Mac, который подключается при белых списках" width="100%">
   </picture>
 </a>
 
-<h1 align="center">NE.VPN — VPN-клиент для Android</h1>
+<h1 align="center">NE.VPN — VPN-клиент для Android и Mac</h1>
 
-<p align="center">Бесплатный VPN для Android, который подключается при белых списках · Free Android VPN client</p>
+<p align="center">Бесплатный VPN для Android и macOS, который подключается при белых списках · Free VPN client for Android and Mac</p>
 
 <p align="center">
-  <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><img alt="Последняя версия" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FFijshH%2Fnevpn-releases%2Freleases%2Flatest%2Fdownload%2Fupdate.json&query=%24.android.versionName&label=%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F&color=15803d&style=flat-square"></a>
+  <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><img alt="Последняя версия для Android" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FFijshH%2Fnevpn-releases%2Freleases%2Flatest%2Fdownload%2Fupdate.json&query=%24.android.versionName&label=Android&color=15803d&style=flat-square&logo=android&logoColor=white"></a>
+  <a href="https://nevpn.app/mac/"><img alt="Последняя версия для Mac" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FFijshH%2Fnevpn-releases%2Freleases%2Flatest%2Fdownload%2Fupdate.json&query=%24.macos.version&label=macOS&color=15803d&style=flat-square&logo=apple&logoColor=white"></a>
   <a href="https://github.com/FijshH/nevpn-releases/releases"><img alt="Скачивания" src="https://img.shields.io/github/downloads/FijshH/nevpn-releases/total?label=%D1%81%D0%BA%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F&color=000&style=flat-square"></a>
   <img alt="Android 8.0+" src="https://img.shields.io/badge/Android-8.0%2B-000?style=flat-square&logo=android&logoColor=white">
+  <img alt="macOS 15+, Apple silicon и Intel" src="https://img.shields.io/badge/macOS-15%2B%20%C2%B7%20Apple%20silicon%20%26%20Intel-000?style=flat-square&logo=apple&logoColor=white">
   <a href="https://nevpn.app"><img alt="nevpn.app" src="https://img.shields.io/badge/nevpn.app-000?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><b>Скачать APK</b></a>
+  <a href="https://github.com/FijshH/nevpn-releases/releases/latest"><b>Скачать для Android (APK)</b></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://nevpn.app/download/mac"><b>Скачать для Mac (.pkg)</b></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://nevpn.app">Сайт</a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="#english">English</a>
 </p>
 
-**NE.VPN** — бесплатный VPN-клиент для Android. Одна кнопка, подписки любых провайдеров и поддержка OpenFlux, который подключается, когда мобильный интернет на белых списках и обычный VPN не работает. Здесь лежат все версии приложения: [скачайте APK последней версии](https://github.com/FijshH/nevpn-releases/releases/latest), а новые приложение найдёт и поставит само.
+**NE.VPN** — бесплатный VPN-клиент для Android и macOS. Одна кнопка, подписки любых провайдеров и поддержка OpenFlux, который подключается, когда мобильный интернет на белых списках и обычный VPN не работает. Здесь лежат все версии приложения: [APK для Android](https://github.com/FijshH/nevpn-releases/releases/latest) и [установщик для Mac](https://nevpn.app/download/mac). Новые версии приложение найдёт и поставит само — на телефоне и на Mac.
 
 <p align="center">
   <img src="assets/screens.png" alt="Экраны NE.VPN: подключено, светлая тема, несколько подписок, настройки" width="100%">
@@ -47,6 +51,22 @@
   <img src="assets/tablet.png" alt="NE.VPN на планшете: кнопка подключения слева, две подписки справа" width="100%">
 </p>
 
+## NE.VPN для Mac
+
+Те же подписки и профили, что на Android, в маленьком окне и строке меню. macOS 15 Sequoia, 26 Tahoe и 27, Apple silicon и Intel. Подробно — [nevpn.app/mac](https://nevpn.app/mac/).
+
+<p align="center">
+  <img src="assets/mac.png" alt="NE.VPN для Mac: подключено в тёмной и светлой теме, несколько подписок вкладками, настройки" width="100%">
+</p>
+
+- **Строка меню.** Подключение, смена профиля и пинг — из значка «ne» вверху экрана. Значок в Dock можно выключить.
+- **Подписки вкладками.** Листайте двумя пальцами, переключайтесь ⌃⇥ или ⌘1…9, меняйте порядок перетаскиванием.
+- **Liquid Glass** в macOS 26 и новее, привычный вид macOS 15 в Sequoia; светлая и тёмная тема — как в системе.
+- **Те же протоколы и белые списки:** VLESS Reality и XHTTP, Hysteria2, AmneziaWG, WireGuard, OpenFlux и другие, ядро sing-box.
+- **Россия мимо VPN:** российские сайты и адреса открываются напрямую.
+- **Страница провайдера** с продлением и кабинетом, напоминания об окончании подписки.
+- **Обновляется само** в один клик; английский и русский интерфейс.
+
 ## Подписки из других приложений и свой сервер
 
 NE.VPN читает те же форматы, что и другие клиенты, поэтому подписку менять не нужно:
@@ -56,7 +76,7 @@ NE.VPN читает те же форматы, что и другие клиен�
 - **WireGuard:** файл `.conf` или ссылка `wireguard://`.
 - **Свой сервер на 3x-ui, Marzban или Remnawave:** ссылка-подписка панели (обычный текст, base64, конфиг sing-box или Xray). Срок подписки приложение показывает, если панель его сообщает.
 
-## Установка
+## Установка на Android
 
 1. Откройте [последний релиз](https://github.com/FijshH/nevpn-releases/releases/latest) и скачайте APK (какой — в таблице ниже).
 2. Откройте файл. Android попросит разрешить установку из браузера — разрешите один раз.
@@ -73,6 +93,15 @@ Root не нужен. Нужен Android 8.0 или новее.
 | `nevpn-<версия>-armeabi-v7a.apk` | Старые 32-битные телефоны |
 | `nevpn-<версия>-x86_64.apk` | Эмуляторы и устройства на Intel/AMD |
 | `nevpn-<версия>.apk` | Универсальный: подходит всем, но весит втрое больше |
+
+## Установка на Mac
+
+1. Скачайте [установщик NE.VPN .pkg](https://nevpn.app/download/mac) — один файл для Apple silicon и Intel. Все версии для Mac — [в релизах `macos-…`](https://github.com/FijshH/nevpn-releases/releases?q=macos&expanded=true).
+2. Откройте его. Если macOS пишет, что не может проверить установщик: Системные настройки → Конфиденциальность и безопасность → «Всё равно открыть». Это нужно один раз.
+3. NE.VPN появится в «Программах» и откроется сам. При первом подключении macOS попросит включить NE.VPN в «Объектах входа и расширениях»: туннель работает как системная служба.
+4. Нажмите **+**, вставьте ссылку-подписку или ключ и подключайтесь. Дальше приложение обновляется само.
+
+Без установщика: [образ диска .dmg](https://nevpn.app/download/mac-dmg), перетащите NE.VPN в «Программы» (macOS спросит разрешение дважды). Файл `.zip` в релизе — то, из чего приложение обновляется.
 
 ### Проверка файла
 
@@ -98,9 +127,15 @@ shasum -a 256 nevpn-*.apk
 </details>
 
 <details>
-<summary><b>Почему не в Google Play?</b></summary>
+<summary><b>Есть версия для Mac? А для iPhone и Windows?</b></summary>
 <br>
-Приложение распространяется как APK отсюда и обновляется само. Так новые версии доходят до всех сразу и не зависят от магазина.
+Для Mac — да: macOS 15 и новее, Apple silicon и Intel, <a href="https://nevpn.app/mac/">nevpn.app/mac</a>. Для iPhone, iPad и Windows пока нет.
+</details>
+
+<details>
+<summary><b>Почему не в Google Play и App Store?</b></summary>
+<br>
+Приложение распространяется отсюда — APK для Android и установщик для Mac — и обновляется само. Так новые версии доходят до всех сразу и не зависят от магазина.
 </details>
 
 <details>
@@ -128,6 +163,12 @@ Android 8.0 и новее, телефон, планшет или расклад�
 </details>
 
 <details>
+<summary><b>Какой Mac нужен и почему macOS спрашивает разрешение?</b></summary>
+<br>
+Любой Mac с macOS 15 Sequoia, 26 Tahoe или 27, на Apple silicon или Intel. macOS спрашивает один раз, когда открываете установщик (приложение не из App Store), и один раз при первом подключении — чтобы включить службу, которая поднимает VPN.
+</details>
+
+<details>
 <summary><b>Банк не открывается с VPN. Что делать?</b></summary>
 <br>
 Российские приложения уже работают мимо VPN. Если какое-то нет, в настройках откройте «Приложения вне VPN» и отметьте его.
@@ -136,7 +177,7 @@ Android 8.0 и новее, телефон, планшет или расклад�
 <details>
 <summary><b>Нашли ошибку?</b></summary>
 <br>
-<a href="https://github.com/FijshH/nevpn-releases/issues/new">Откройте issue</a>: модель телефона, версия Android, версия приложения (Настройки → О приложении) и что происходит.
+<a href="https://github.com/FijshH/nevpn-releases/issues/new">Откройте issue</a>: модель телефона или Mac, версия Android или macOS, версия приложения (Настройки → О приложении) и что происходит.
 </details>
 
 ---
@@ -145,7 +186,7 @@ Android 8.0 и новее, телефон, планшет или расклад�
 
 ## English
 
-**NE.VPN** is a free VPN client for Android. One button, subscriptions from any provider, and OpenFlux support, which connects when mobile data is restricted to a whitelist and ordinary VPNs fail. This repository holds every release of the app; the app finds and installs new ones by itself.
+**NE.VPN** is a free VPN client for Android and macOS. One button, subscriptions from any provider, and OpenFlux support, which connects when mobile data is restricted to a whitelist and ordinary VPNs fail. This repository holds every release of the app, [APKs for Android](https://github.com/FijshH/nevpn-releases/releases/latest) and [the Mac installer](https://nevpn.app/download/mac); the app finds and installs new ones by itself.
 
 - **Whitelist lockdowns:** add an `openflux://` link from your provider or your own server; the channel falls back to another path by itself when the direct one is closed.
 - **Any subscription:** subscription links, single links, Amnezia `vpn://` keys and `.conf` files, as many as you like.
@@ -154,10 +195,15 @@ Android 8.0 и новее, телефон, планшет или расклад�
 - **Russian apps and sites stay outside the VPN**, so banks and Gosuslugi keep working.
 - **Renew from the app:** the renew button opens your provider's payment page, the account button its account page; a reminder comes before the subscription runs out.
 - Ping to every server, self-update, quick settings tile, always-on VPN, tablets and foldables.
+- **On the Mac** (macOS 15 Sequoia and later, Apple silicon and Intel): the same subscriptions and profiles in a small window and the menu bar, subscriptions as tabs, Liquid Glass on macOS 26, English and Russian. More at [nevpn.app/en/mac](https://nevpn.app/en/mac/).
 
-### Install
+### Install on Android
 
 Download the `arm64-v8a` APK from the [latest release](https://github.com/FijshH/nevpn-releases/releases/latest) (`armeabi-v7a` for old 32-bit phones, `x86_64` for emulators, or the universal one), open it, allow installs from your browser once, tap **+** in the app and paste your subscription. Android 8.0 or later, no root.
+
+### Install on a Mac
+
+Download the [.pkg installer](https://nevpn.app/download/mac) (one file for Apple silicon and Intel) and open it. If macOS says it cannot check the installer: System Settings → Privacy & Security → Open Anyway, once. NE.VPN goes to Applications and opens; on the first connect macOS asks to allow it in Login Items & Extensions, since the tunnel runs as a system service. Click **+**, paste your subscription and connect. A [.dmg](https://nevpn.app/download/mac-dmg) is there too; every Mac version is in the [`macos-…` releases](https://github.com/FijshH/nevpn-releases/releases?q=macos&expanded=true).
 
 ### Coming from another app
 
@@ -169,8 +215,10 @@ Subscriptions and links from Happ, v2rayNG, Hiddify, NekoBox and Streisand work 
 
 **What is a whitelist lockdown?** A mode in which a mobile carrier lets through approved sites only. Ordinary VPNs do not connect in it; OpenFlux profiles do, and fall back to another path by themselves when the direct one is closed.
 
-**Why not Google Play?** The app ships as a signed APK from this repository and updates itself, so new versions reach everyone at once. Android will not install an APK with another signature over it.
+**Is there an iPhone or Windows version?** Not yet: Android and macOS today.
 
-**Found a bug?** [Open an issue](https://github.com/FijshH/nevpn-releases/issues/new) with the phone model, Android version and app version.
+**Why not Google Play or the App Store?** The app ships from this repository, a signed APK for Android and an installer for the Mac, and updates itself, so new versions reach everyone at once. Android will not install an APK with another signature over it, and the Mac app installs only updates signed by the same developer.
 
-<p align="center"><sub>VPN для Android · VPN-клиент · обход белых списков · VLESS Reality · XHTTP · VMess · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS · AmneziaWG · WireGuard · OpenFlux · sing-box · Xray-core · Android VPN client · APK · <a href="https://nevpn.app">nevpn.app</a></sub></p>
+**Found a bug?** [Open an issue](https://github.com/FijshH/nevpn-releases/issues/new) with the phone or Mac model, Android or macOS version and app version.
+
+<p align="center"><sub>VPN для Android · VPN для Mac · VPN для macOS · VPN-клиент · обход белых списков · VLESS Reality · XHTTP · VMess · Trojan · Shadowsocks · Hysteria2 · TUIC · AnyTLS · AmneziaWG · WireGuard · OpenFlux · sing-box · Xray-core · Android VPN client · Mac VPN client · macOS VPN · APK · <a href="https://nevpn.app">nevpn.app</a></sub></p>
